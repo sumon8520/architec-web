@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media query</title>
+        <style>
+            .contrainer{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+            .food{
+                border: 3px solid tomato;
+                border-radius: 10px;
+                padding: 10px;
+            }
+            .food image{
+                width: 100%;
+            }
+            @media screen and (min-width:576px) and(max-width:992px) {
+                .contrainer{
+                    grid-template-columns: repeat(2; 1fr);
+                    .food{
+                        
+                    }
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- .contrainer>.food>img*12[src="imager/food.avif"]+h2{food item -$}+p{price: $222}+p>lorem20^btn{buy food} -->
+        <div class="contrainer">
+            <div class="food">
+                <img src="image/food.avif" alt=""><img src="image/food.avif" alt=""><img src="image/food.avif" alt=""><img src="image/food.avif" alt=""><img src="image/food.avif" alt=""><img src="image/food.avif" alt=""><img src="image/food.avif" alt=""><img src="image/food.avif" alt=""><img src="image/food.avif" alt=""><img src="image/food.avif" alt=""><img src="image/food.avif" alt=""><img src="image/food.avif" alt="">
+                <h2>food item -1</h2>
+                <p>price: 1222</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa possimus exercitationem inventore nam nihil? Temporibus impedit deserunt et expedita accusamus.</p>
+                <button>buy food</button>
+            </div>
+        </div>
+    </body>
